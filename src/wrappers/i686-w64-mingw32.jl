@@ -3,12 +3,12 @@ export libpng
 
 using Zlib_jll
 JLLWrappers.@generate_wrapper_header("libpng")
-JLLWrappers.@declare_library_product(libpng, "libpng16-16.dll")
+JLLWrappers.@declare_library_product(libpng, "libpng16.dll")
 function __init__()
     JLLWrappers.@generate_init_header(Zlib_jll)
     JLLWrappers.@init_library_product(
         libpng,
-        "bin\\libpng16-16.dll",
+        "bin\\libpng16.dll",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
