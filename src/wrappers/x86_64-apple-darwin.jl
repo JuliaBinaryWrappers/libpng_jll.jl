@@ -8,7 +8,7 @@ function __init__()
     JLLWrappers.@generate_init_header(Zlib_jll)
     JLLWrappers.@init_library_product(
         libpng,
-        "lib/libpng16.16.37.0.dylib",
+        "lib/libpng16.16.40.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
